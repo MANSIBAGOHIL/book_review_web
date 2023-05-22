@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce0be;
+  font-family: "poppins",sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  overflow: scroll;
+}
+ 
+.card {
+  background-color: #99806d;
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  width: 235px;
+  height: 405px;
+  overflow: hidden;
+  position: relative;
+  padding: 17px;
+  margin: 11px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 300px;
+  width: 235px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.card h3 {
+  margin: 15px auto;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.card .price {
+  position: relative;
+  bottom: -23px;
+  left: -4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card .title {
+  position: relative;
+  bottom: 2px;
+  left: -2px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+.card button {
+  position: absolute;
+  bottom: 9px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}

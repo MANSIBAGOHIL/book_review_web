@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Review</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+	text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.img_bg{
+    /* background-image: url('./images/bg_about3.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.team{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* background: radial-gradient(#274556,#3ba3db); */
+    background: radial-gradient(#d6bd9f,#96665a);
+    /* #281c3e,#b38fe6 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+    /* text-align: center; */
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+}
+.box{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+	padding: 16px;
+	background: #6b4841; /*#113548*/
+    /* #1b1229 */
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
+
+
+.about-section {
+    padding: 20px;
+    color: #fff;
+    /* top: -2000px; */
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+  background: transparent;
+  transform: translate(-2%,160%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(252, 252, 252);
+}
+
+.img_size{
+    position: relative;
+    left: 40%;
+    /* left: 50%; */
+    width: 89px;
+    height: 109px;
+    size: contain;
+
+}
+
+</style>
+</head>
+
+<body>
+     
+    <div class="img_bg">
+        <header class="header">
+            <nav class="navbar">
+                <a href=".\index.html">Home</a>
+                <a href=".\category.html">Category</a>
+                <a href=".\about_bk.html">About</a>
+                <a href=".\contact_us.html">Contact US</a>
+                <a href=".\index_signIn.html">Login</a>
+            </nav>
+        </header>
+
+        <!-- <div class="about-section">
+            <h2 class="logo">About US</h2>
+            <p>For any query leave a comment in the Home page comment section. <br>
+             You can also send us email and call us on Week days.
+            Thankyou for your patience and hope you had a great shopping here.</p>
+        </div> -->
+        
+        <section class="team">
+		<div class="center">
+			<h1>Our Team</h1>
+		</div>
+
+		<div class="team-content">
+            <div class="box">
+				<div class="img_size"><img src="./images/m03.jpeg" alt="Nidhi"></div><br>
+				<h3>Nidhi Dhinoja</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#"><i class="bx bxl-linkedin"></i></a>
+					<a href="https://www.youtube.com/channel/UCv4bs8kV76kr1ABuEh6Gf7w"><i class="bx bxl-youtube"></i></a>
+					<a href="#"><i class="bx bxl-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<!-- <img src="D:\IWT\books_review\images\02.jpeg" class="img_size" style="width:100% height=300px"> -->
+                <div class="img_size"><img src="./images\m02.jpg" alt="Mansi"></div><br>
+				<h3>Mansiba Gohil</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/mansiba-gohil-8aba67221/"><i class="bx bxl-linkedin"></i></a>
+					<a href="https://www.youtube.com/channel/UCv4bs8kV76kr1ABuEh6Gf7w"><i class="bx bxl-youtube"></i></a>
+					<a href="https://www.instagram.com/mansi_15_._/"><i class="bx bxl-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+                <div class="img_size"><img src="./images\m07.png" alt="Deep"></div><br>
+				<!-- <img src="> -->
+				<h3>Deep Bhalsod</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#"><i class="bx bxl-linkedin"></i></a>
+					<a href="https://www.youtube.com/channel/UCv4bs8kV76kr1ABuEh6Gf7w"><i class="bx bxl-youtube"></i></a>
+					<a href="#"><i class="bx bxl-instagram"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+        <!-- <h2 style="text-align:center">Our Team</h2>
+
+        <table>
+            <tr>
+                <td><h2>Himansi</h2></td>
+                <td><p class="title">CEO & Founder</p></td>
+                <p>“Be yourself; everyone else is already taken.”</p>
+                <p>himanshi@example.com</p>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                <center><img src="/images/p1.jfif" alt="Jane" style="width:100% height=300px"></center>
+                <div class="container">
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <center><img src="/images/p2.jfif" alt="Jane" style="width:100% height=300px"></center>
+                <div class="container">
+                    <h2>Abc</h2>
+                    <p class="title">Art Director</p>
+                    <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+                    <p>Abc@example.com</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <center><img src="/images/p3.jfif" alt="Jane" style="width:100% height=300px"></center>
+                <div class="container">
+                    <h2>Xyz</h2>
+                    <p class="title">Designer</p>
+                    <p>“A room without books is like a body without a soul.”</p>
+                    <p>xyz@example.com</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="signIn.js"></script>
+</body>
+
+</html>

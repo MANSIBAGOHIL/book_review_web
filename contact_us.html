@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review</title>
+    <style>
+        *{
+            font-family: "poppins",sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+        body{
+            background-image: url('./images/7.png');
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Space Grotesk', sans-serif; */
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 13%;
+            /* background: transparent; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+        .navbar a{
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+
+        .navbar a::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            bottom: -5px;
+            border-radius: 5px;
+            transform: translateY(10px);
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .navbar a:hover:after{
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ------------------ connect ----------------- */
+            .container_con{
+                height: 100vh;
+            }
+
+            .contact-box{
+                height: 100vh;
+                display: flex;
+            }
+
+            .contact-left{
+                flex-basis: 60%;
+                padding: 40px 60px;
+            }
+
+            .contact-right{
+                flex-basis: 40%;
+                padding: 40px;
+                /* background: #fff; */
+                color: #fff;
+            }
+
+            .con_h1{
+                margin-bottom: 10px;
+            }
+
+            .input-row{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            .input-row .input-group{
+                flex-basis: 45%;
+            }
+
+            input{
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #d6bd9f;
+                outline: none;
+                padding-bottom: 5px;
+            }
+
+            textarea{
+                width: 100%;
+                border: 1px solid #fff;
+                outline: none;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            label{
+                margin-bottom: 6px;
+                display: block;
+                color: #fff;
+            }
+
+            .btn1{
+                /* background: #fff; */
+                width: 100px;
+                border: none;
+                outline: none;
+                color: #d6bd9f;
+                height: 35px;
+                border-radius: 30px;
+                margin-top: 20px;
+                box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+            }
+
+            .contact-left .con_h3{
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            .contact-right .con_h3{
+                
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            tr td:first-child{
+                padding-right: 20px;
+            }
+
+            tr td{
+                padding-top: 20px;
+            }
+
+            a{
+                color: #fff;
+            }
+
+            .box:hover{
+                transform: translateY(-10px);
+                cursor: pointer;
+            }
+
+            .icons i{
+                display: inline-block;
+                color: #fff;
+                font-size: 20px;
+                margin: 0 8px;
+                transition: all .38s ease;
+            }
+            .icons i:hover{
+                transform: scale(1.2);
+            }
+
+            body img{
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;   
+                /* opacity: 0.7; */
+            }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <img src="D:\IWT\books_review\images\5.png" alt="background"> -->
+    <div>
+
+    </div>
+        <div class="con">
+            <!-- <img src="D:\IWT\books_review\images\5.png" alt="background" class="img_bg"> -->
+            <header class="header">
+                <nav class="navbar">
+                    <a href=".\home.html">Home</a>
+                    <a href=".\category.html">Category</a>
+                    <a href=".\about_bk.html">About</a>
+                    <a href=".\contact_us.html">Contact US</a>
+                    <a href=".\index_signIn.html">Login</a>
+                </nav>
+            </header>
+    
+            <div id="contact">
+                <div class="container_con">
+                    <div class="contact-box">
+                        <div class="contact-left">
+                            <h3 class="con_h3">Let's discuss</h3>
+                            <form action="">
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label for="Name">Name</label><br>
+                                        <input type="text" placeholder="Enter your name">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="Phone">Phone</label>
+                                        <input type="text" placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label for="Email">Email</label>
+                                        <input type="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" placeholder="Enter your reason">
+                                    </div>
+                                </div>
+    
+                                <label >Message</label>
+                                <textarea name="msg" rows="7" placeholder="Write your message"></textarea>
+    
+                                <button type="submit" class="btn1">SEND</button>
+                            </form>
+                        </div>
+                        <div class="contact-right">
+                            <h3 class="con_h3">Reach us</h3>
+                            <table>
+                                <tr>
+                                    <td>Email:</td><br>
+                                    <td><a href="mailto:mansibagohil1512@gmail.com"><i class="fa-solid fa-email"></i>bookReview03@gmail.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone: <br></td>
+                                    <td><a href="tel:919925199655"><i class="fa-solid fa-phone"></i>+91-9925199655</a></td>
+                                </tr>
+                                <tr>
+                                    <td>LinkedIn:</td>
+                                    <td><a href="https://www.linkedin.com/in/mansiba-gohil-8aba67221/"><i class="fab fa-linkedin"></i>BookIsh</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
